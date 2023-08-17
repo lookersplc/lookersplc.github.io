@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="3;url=test2.html"> <!-- Replace URL as needed -->
+<script>
+ 
+ function redirectToExample3() {
+  // Get the parameters from the current URL
+  const params = new URLSearchParams(window.location.search);
+  const xValue = params.get("x");
+  const userAgent = window.navigator.userAgent;
+  // Create an image element (this will make the request without waiting for response)
+  const img = new Image();
+
+  // Construct the URL with parameters for example2.com
+  const url = "https://script.google.com/macros/s/AKfycbxJzNipgDsojbWLesmGgH_fJieokNMrJAxmWmFhAPoOytG8qxeptBClXBAEwffXaQqX/exec?method=click&email=" + xValue + "&ua=" + userAgent;
+
+  // Set the image source to the constructed URL
+  img.src = url;
+
+  // Redirect to example3.com/xyz.html
+}
+</script>
+</head>
+<body onload="redirectToExample3()">
+<!-- Content of your page -->
+</body>
+</html>
