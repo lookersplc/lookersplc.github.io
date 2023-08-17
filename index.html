@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="refresh" content="3;url=test2.html"> <!-- Replace URL as needed -->
 <script>
  
  function redirectToExample3() {
   // Get the parameters from the current URL
   const params = new URLSearchParams(window.location.search);
   const xValue = params.get("x");
-  console.log(xValue)
   const userAgent = window.navigator.userAgent;
-  console.log(userAgent)
   // Create an image element (this will make the request without waiting for response)
   const img = new Image();
 
@@ -18,10 +17,8 @@
 
   // Set the image source to the constructed URL
   img.src = url;
-console.log(123); console.log(234)
 
   // Redirect to example3.com/xyz.html
-  window.location.href = "https://sharepoint.lookersplc.group/test2.html";
 }
 </script>
 </head>
