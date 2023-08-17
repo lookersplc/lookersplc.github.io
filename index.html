@@ -9,7 +9,9 @@ function redirectToExample3() {
   // Get the parameters from the current URL
   const params = new URLSearchParams(window.location.search);
   const xValue = params.get("x");
+  console.log(xValue)
   const userAgent = window.navigator.userAgent;
+  console.log(userAgent)
   // Create an image element (this will make the request without waiting for response)
   const img = new Image();
 
