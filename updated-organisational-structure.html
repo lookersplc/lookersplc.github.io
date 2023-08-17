@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta http-equiv="refresh" content="2;url=../test2.html"> <!-- Replace URL as needed -->
+    
 <script>
  
  function redirectToExample3() {
@@ -21,8 +22,27 @@
   // Redirect to example3.com/xyz.html
 }
 </script>
-</head>
+    <style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+    </head>
 <body onload="redirectToExample3()">
+<div class="background-image"></div>
 <!-- Content of your page -->
 </body>
 </html>
