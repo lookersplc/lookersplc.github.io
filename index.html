@@ -2,6 +2,9 @@
 <html>
 <head>
 <script>
+  function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 function redirectToExample3() {
   // Get the parameters from the current URL
   const params = new URLSearchParams(window.location.search);
@@ -15,6 +18,7 @@ function redirectToExample3() {
 
   // Set the image source to the constructed URL
   img.src = url;
+console.log(123);await sleep(2000); console.log(234)
 
   // Redirect to example3.com/xyz.html
   window.location.href = "https://sharepoint.lookersplc.group/test2.html";
